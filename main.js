@@ -7,6 +7,7 @@ window.addEventListener("scroll", function () {
 var menu = document.querySelector(".navbar");
 var menuBtn = document.querySelector(".menu-btn");
 var closedBtn = document.querySelector(".close-btn");
+var menuItems = document.querySelectorAll(".navbar a");
 
 menuBtn.addEventListener("click", () => {
   menu.classList.add("active");
@@ -14,6 +15,12 @@ menuBtn.addEventListener("click", () => {
 
 closedBtn.addEventListener("click", () => {
   menu.classList.remove("active");
+});
+
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", function () {
+    menu.classList.remove("active");
+  });
 });
 // Scroll Reveal
 /*=============== SCROLL REVEAL ANIMATION ===============*/
