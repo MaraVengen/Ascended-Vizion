@@ -22,6 +22,28 @@ menuItems.forEach(function (menuItem) {
     menu.classList.remove("active");
   });
 });
+
+// Swiper
+// if (window.innerWidth <= 609) {
+// const swiper = new Swiper(".swiper-container", {
+//   spaceBetween: 20,
+//   centeredSlides: true,
+//   autoplay: {
+//     delay: 7500,
+//     disableOnInteraction: false,
+//   },
+//   resistance: "100%",
+//   loop: true,
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//     },
+//     640: {
+//       slidesPerView: 2,
+//     },
+//   },
+// }
+// });
 // Scroll Reveal
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 // const sr = ScrollReveal({

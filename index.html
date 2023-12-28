@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -199,6 +206,21 @@
     </section>
     <!-- Lore section ends -->
 
+    <!-- Video section starts -->
+    <section class="video">
+      <div class="container">
+        <div class="video-content">
+          <video
+            src="video/ascended-clans.mp4"
+            width="100%"
+            height="100%"
+            controls
+          ></video>
+        </div>
+      </div>
+    </section>
+    <!-- Video section ends -->
+
     <!-- Enlightened City section starts -->
     <section id="enlightened-city">
       <div class="container">
@@ -217,60 +239,207 @@
               Future. Join us in reshaping the metaverse
             </p>
 
-            <button class="btn">Visit City →</button>
+            <a
+              class="btn-link"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><button class="btn">Visit City →</button></a
+            >
           </div>
           <div class="enlightened-img">
             <img src="img/enlightened-1.png" alt="" />
           </div>
         </div>
       </div>
-      <div class="enlightened-city-image">
-        <img src="img/enlightened-2.png" alt="" />
-      </div>
+      <div
+        class="enlightened-city-image"
+        style="
+          background: url(img/enlightened-2.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      ></div>
 
       <div class="container">
-        <div class="enlightened-cards">
-          <div class="enlightened-card">
-            <h3>Ascend your vision with spaces</h3>
-            <p>
-              Explore Prime Digital Real Estate at Enlightened City – The Wall
-              Street of the Metaverse! Lease high traffic digital real estate
-              for your business, office, or brand advertising. Join a vibrant
-              community attracting diverse entrepreneurs, visionaries , and
-              creators leading the new era of Web 3 and the metaverse. Secure
-              your spot in the heart of the city.
-            </p>
+        <div>
+          <div class="enlightened-cards">
+            <div class="enlightened-card">
+              <h3>Ascend your vision with spaces</h3>
+              <p>
+                Explore Prime Digital Real Estate at Enlightened City – The Wall
+                Street of the Metaverse! Lease high traffic digital real estate
+                for your business, office, or brand advertising. Join a vibrant
+                community attracting diverse entrepreneurs, visionaries , and
+                creators leading the new era of Web 3 and the metaverse. Secure
+                your spot in the heart of the city.
+              </p>
+              <a
+                class="btn-link"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button class="btn2">Rent now →</button></a
+              >
+            </div>
+            <div class="enlightened-card">
+              <h3>Enlightened city events</h3>
+              <p>
+                Discover a vibrant array of events at Enlightened City,
+                featuring the latest and diverse community-hosted gatherings
+                alongside our exclusive Ascended Vizion events. Immerse yourself
+                in presentations, workshops, networking opportunities, and more.
+                Join us for the next phase of the internet.
+              </p>
 
-            <button class="btn2">Rent now →</button>
-          </div>
-          <div class="enlightened-card">
-            <h3>Enlightened city events</h3>
-            <p>
-              Discover a vibrant array of events at Enlightened City, featuring
-              the latest and diverse community-hosted gatherings alongside our
-              exclusive Ascended Vizion events. Immerse yourself in
-              presentations, workshops, networking opportunities, and more. Join
-              us for the next phase of the internet.
-            </p>
+              <a
+                class="btn-link"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button class="btn2">See Events →</button></a
+              >
+            </div>
+            <div class="enlightened-card">
+              <h3>Vizionary Hubs</h3>
+              <p>
+                Experience the heartbeat of Enlightened City through Vizionary
+                Hubs—pioneering leaders shaping the community's digital
+                landscape. Discover impactful influencers, the top
+                entrepreneurs, and their immersive experiences. Navigate the
+                vibrant cityscape where innovation meets influence.
+              </p>
 
-            <button class="btn2">See events →</button>
+              <a
+                class="btn-link"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button class="btn2">View hubs →</button></a
+              >
+            </div>
           </div>
-          <div class="enlightened-card">
-            <h3>Vizionary Hubs</h3>
-            <p>
-              Experience the heartbeat of Enlightened City through Vizionary
-              Hubs—pioneering leaders shaping the community's digital landscape.
-              Discover impactful influencers, the top entrepreneurs, and their
-              immersive experiences. Navigate the vibrant cityscape where
-              innovation meets influence.
-            </p>
-
-            <button class="btn2">View hubs →</button>
-          </div>
+          <!-- <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
         </div>
       </div>
     </section>
     <!-- Enlightened City section ends -->
+
+    <!-- Visionary Hubs Starts -->
+    <section id="hubs">
+      <div class="container">
+        <div class="hubs-content">
+          <h2>Vizionary Hubs</h2>
+
+          <div class="hive-cards">
+            <div class="hive-card">
+              <div class="hive-img">
+                <img src="img/hive.png" alt="" />
+              </div>
+              <div class="hive-content">
+                <div class="hive-text">
+                  <h3>Hive Dao</h3>
+                  <p>
+                    A buzzing community of creators, developers, and enthusiasts
+                    in the dynamic world of NFT, Defi projects and beyond.
+                  </p>
+                  <a
+                    class="btn-link"
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="btn2">Visit Hub →</button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hive-card">
+              <div class="hive-img">
+                <img src="img/hive.png" alt="" />
+              </div>
+              <div class="hive-content">
+                <div class="hive-text">
+                  <h3>Hive Dao</h3>
+                  <p>
+                    A buzzing community of creators, developers, and enthusiasts
+                    in the dynamic world of NFT, Defi projects and beyond.
+                  </p>
+                  <a
+                    class="btn-link"
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="btn2">Visit Hub →</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Visionary Hubs Ends-->
+
+    <section
+      id="pre-footer"
+      style="
+        background: url(img/Banner.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <div class="pf-content">
+          <h1>Are you ready to Ascend?</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Background modal starts here -->
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="modal-close-btn">+</div>
+        <div class="modal-main-content">
+          <div class="event-name">
+            <h3>Event name</h3>
+            <p>Short description of event</p>
+          </div>
+          <div class="event-time">
+            <h5>14-12-23</h5>
+            <h6>Time</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background modal ends here -->
+
+    <!-- Footer starts -->
+    <footer>
+      <div class="footer-img">
+        <img src="img/logo.png" alt="" />
+      </div>
+
+      <div class="footer-links">
+        <ul>
+          <li>
+            <a href="#">Twitter</a>
+            <a href="#">Discord</a>
+            <a href="#">Instagram</a>
+            <a href="#">Enlightened City</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer ends -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--Main Javascript  -->
     <script src="main.js"></script>
   </body>
 </html>
