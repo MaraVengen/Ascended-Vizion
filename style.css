@@ -169,7 +169,6 @@ header.sticky {
 #utility .utility-cards {
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -340,10 +339,17 @@ header.sticky {
   );
   border: 1px solid #fe9d01;
   border-radius: 20px;
-  width: 30%;
-  /* height: 800px; */
+  width: 30% !important;
+  height: 51.8rem !important;
   margin: 0 auto;
   padding: 2rem 1.8rem;
+  overflow: hidden;
+  position: relative !important;
+}
+
+.enlightened-card a {
+  position: absolute;
+  bottom: 30px;
 }
 
 .enlightened-card h3 {
@@ -358,7 +364,6 @@ header.sticky {
   font-weight: 400;
   line-height: 3rem;
   font-family: "Clash Display", sans-serif;
-  padding-bottom: 3rem;
 }
 
 .enlightened-city-image {
@@ -367,17 +372,9 @@ header.sticky {
   clear: both;
 }
 
-.swiper-container {
+/* .swiper {
   width: 100%;
-}
-
-.swiper-slide {
-  width: 100%;
-  /* text-align: center; */
-  /* padding: 20px; */
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .swiper-wrapper {
   width: 100%;
@@ -434,8 +431,17 @@ header.sticky {
   margin: 3rem;
 }
 
+.hive-img {
+  width: auto;
+}
+
+.x-op {
+  padding: 2rem;
+}
+
 .hive-content {
   background: rgba(254, 157, 1, 0.1);
+  height: 35rem;
 }
 
 .hive-text {
@@ -622,15 +628,12 @@ header.sticky {
   }
 
   .main-head {
-    color: #fe9d01;
     font-size: 5rem;
     padding: 1rem 0;
     text-align: center;
   }
 
   .main-text {
-    color: white;
-    font-family: "Clash Display", sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
     padding: 0.5rem 0;
@@ -639,13 +642,17 @@ header.sticky {
     text-align: center;
   }
 
+  #utility {
+    padding-top: 3rem;
+  }
+
   #utility .utility-cards {
     display: block;
     margin: 1rem 0;
   }
 
   #utility .utility-card {
-    padding: 2rem 1rem 4rem 1rem;
+    padding: 1rem 1rem 4rem 1rem;
 
     width: 95%;
     margin: 2rem auto;
@@ -662,15 +669,17 @@ header.sticky {
     );
   }
 
+  #utility h2 {
+    padding-bottom: 1rem;
+  }
+
   #utility h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
   }
 
   .utility-text {
-    color: white;
-    font-family: "Clash Display", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-align: center;
   }
 
@@ -681,16 +690,17 @@ header.sticky {
   .lore-content .span {
     font-size: 1rem;
     padding: 0.8rem 1.5rem;
+    margin: 1.5rem;
   }
 
   .storyline h2 {
-    color: #fe9d01;
-    font-size: 4.3rem;
+    font-size: 4.8rem;
     padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .storyline p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 2.1rem;
     padding: 1rem 0.3rem;
@@ -708,27 +718,34 @@ header.sticky {
   }
 
   .enlightened-card {
-    width: 100%;
-    /* height: 800px; */
+    width: 100% !important;
+    height: 45rem !important;
     margin: 3rem auto;
     padding: 2rem 1.8rem;
   }
 
   .enlightened-card h3 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     padding-bottom: 1.6rem;
   }
 
   .enlightened-card p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 3rem;
-    font-family: "Clash Display", sans-serif;
     padding-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .enlightened-card a {
+    position: absolute;
+    bottom: 5px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
   .enlightened-text h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     padding: 1.5rem 0.5rem;
   }
 
@@ -764,14 +781,19 @@ header.sticky {
     justify-content: center;
     width: 100%;
     margin: 3.5rem auto;
+    margin-bottom: 1rem;
   }
 
   .hubs-content h2 {
-    font-size: 4rem;
+    font-size: 4.8rem;
+  }
+
+  .hive-content {
+    height: 100%;
   }
 
   .hive-content h3 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
   }
 
   .hive-cards {
@@ -787,7 +809,6 @@ header.sticky {
 
   .hive-content p {
     font-size: 2rem;
-    font-family: "Clash Display", sans-serif;
     padding-bottom: 1rem;
   }
 
@@ -844,14 +865,11 @@ header.sticky {
   }
 
   .main-head {
-    color: #fe9d01;
     font-size: 6rem;
     padding: 1rem 0;
   }
 
   .main-text {
-    color: white;
-    font-family: "Clash Display", sans-serif;
     font-size: 2rem;
     font-weight: 500;
     padding: 0.5rem 0;
@@ -888,14 +906,11 @@ header.sticky {
   }
 
   .utility-text {
-    color: white;
-    font-family: "Clash Display", sans-serif;
     font-size: 1.5rem;
     text-align: center;
   }
 
   .storyline h2 {
-    color: #fe9d01;
     font-size: 5rem;
     padding-top: 1.5rem;
   }
@@ -911,6 +926,53 @@ header.sticky {
   #utility,
   #lore {
     padding-bottom: 5rem;
+  }
+
+  .enlightened-text h2 {
+    font-size: 5rem;
+    padding: 0;
+  }
+
+  .enlightened-text p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .enlightened-text {
+    width: 60%;
+    padding-right: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .enlightened-img {
+    width: 40%;
+    padding-top: 1.5rem;
+  }
+
+  .enlightened-content {
+    padding: 2.3rem 0 1rem 0;
+  }
+
+  .enlightened-cards {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 2rem 0.5rem;
+    gap: 2rem;
+  }
+
+  .enlightened-card {
+    width: 100% !important;
+    height: 45rem !important;
+    padding: 2rem 1.8rem;
+  }
+
+  .enlightened-card h3 {
+    font-size: 2.7rem;
+  }
+
+  .enlightened-card p {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
   }
 
   .modal-content {

@@ -24,26 +24,47 @@ menuItems.forEach(function (menuItem) {
 });
 
 // Swiper
-// if (window.innerWidth <= 609) {
-// const swiper = new Swiper(".swiper-container", {
-//   spaceBetween: 20,
-//   centeredSlides: true,
-//   autoplay: {
-//     delay: 7500,
-//     disableOnInteraction: false,
-//   },
-//   resistance: "100%",
-//   loop: true,
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     640: {
-//       slidesPerView: 2,
-//     },
-//   },
-// }
-// });
+var init = false;
+var swiper;
+function swiperCard() {
+  if (window.innerWidth <= 610) {
+    if (!init) {
+      init = true;
+      swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        // slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+      });
+    }
+  } else if (init) {
+    swiper.destroy();
+    init = false;
+  }
+}
+swiperCard();
+window.addEventListener("resize", swiperCard);
 // Scroll Reveal
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 // const sr = ScrollReveal({
