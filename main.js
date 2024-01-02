@@ -39,6 +39,7 @@ function swiperCard() {
           delay: 4000,
           disableOnInteraction: false,
         },
+        resistance: 100,
         loop: true,
         breakpoints: {
           640: {
@@ -65,18 +66,31 @@ function swiperCard() {
 }
 swiperCard();
 window.addEventListener("resize", swiperCard);
-// Scroll Reveal
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-// const sr = ScrollReveal({
-//   origin: "top",
-//   distance: "60px",
-//   duration: 2500,
-//   delay: 400,
-//   reset: true,
-// });
 
-// sr.reveal(".story");
-// // sr.reveal('.home__image', {origin: 'bottom'})
-// sr.reveal(".about-text", { origin: "left" });
-// sr.reveal(".about-image", { origin: "right" });
-// sr.reveal(".utilities-card", { interval: 100 });
+document.getElementById("see-events").addEventListener("click", function () {
+  document.querySelector(".bg-modal").style.display = "flex";
+});
+
+document
+  .querySelector(".modal-close-btn")
+  .addEventListener("click", function () {
+    document.querySelector("bg-modal").style.display = "none";
+  });
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  reset: true,
+});
+
+sr.reveal(".lore-content");
+sr.reveal(".hive-card");
+// sr.reveal('.home__image', {origin: 'bottom'})
+sr.reveal(".about-text", { origin: "left" });
+sr.reveal(".enlightened-text", { origin: "left" });
+sr.reveal(".about-img", { origin: "right" });
+sr.reveal(".enlightened-img", { origin: "right" });
+sr.reveal(".utility-card", { interval: 100 });

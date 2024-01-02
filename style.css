@@ -417,6 +417,15 @@ header.sticky {
   padding-bottom: 1rem;
 }
 
+.hive-content {
+  position: relative;
+}
+
+.hive-content a {
+  position: absolute;
+  bottom: 20px;
+}
+
 .hive-cards {
   display: flex;
   justify-content: center;
@@ -452,7 +461,7 @@ header.sticky {
   background-color: black;
 }
 
-.bg-modal {
+/* .bg-modal {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -461,14 +470,14 @@ header.sticky {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 /* syle modal content here */
-.modal-content {
+/* .modal-content {
   width: 50%;
   margin: 0 auto;
   padding: 2rem;
-  position: relative;
 }
 
 .modal-main-content {
@@ -479,6 +488,7 @@ header.sticky {
   backdrop-filter: blur(20px);
   border-radius: 24px;
   padding: 2.5rem;
+  position: relative;
 }
 
 .event-name {
@@ -500,9 +510,9 @@ header.sticky {
 
 .event-time {
   width: 20%;
-}
+} */
 
-.event-time h5 {
+/* .event-time h5 {
   font-size: 1.8rem;
   font-family: "Clash Display";
   font-weight: 400;
@@ -519,12 +529,66 @@ header.sticky {
 .modal-close-btn {
   position: absolute;
   right: 14px;
-  font-size: 4rem;
+  top: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
   transform: rotate(45deg);
   color: #fe9d01;
+  z-index: 100;
+} */
+*/ #pre-footer {
+  height: 40vh;
+  background-color: #fe9d01;
+}
+
+.pf-content h1 {
+  font-size: 7rem;
 }
 
 /* footer styling starts */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+footer {
+  background-color: black;
+}
+
+.footer-img {
+  width: 6%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 2rem;
+}
+
+.footer-links li {
+  padding-bottom: 2rem;
+}
+
+.footer-links li a {
+  margin: 2rem 3rem;
+}
+
+#events .events-content {
+  margin: 3rem;
+  padding: 3rem;
+  background-image: url(img/Our-utilities.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events-mobi {
+  display: none;
+}
 
 /* footer styling ends */
 
@@ -719,7 +783,7 @@ header.sticky {
 
   .enlightened-card {
     width: 100% !important;
-    height: 45rem !important;
+    height: 48rem !important;
     margin: 3rem auto;
     padding: 2rem 1.8rem;
   }
@@ -782,6 +846,7 @@ header.sticky {
     width: 100%;
     margin: 3.5rem auto;
     margin-bottom: 1rem;
+    padding: 3rem 1rem;
   }
 
   .hubs-content h2 {
@@ -789,26 +854,31 @@ header.sticky {
   }
 
   .hive-content {
-    height: 100%;
+    height: 35rem;
   }
 
   .hive-content h3 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
+  }
+
+  .hive-img {
+    padding: 4rem;
   }
 
   .hive-cards {
     display: block;
     padding: 1.5rem;
+    /* width: 100% !important; */
   }
 
   .hive-card {
-    width: 100%;
+    width: 100% !important;
     border-radius: 20px;
     margin: 2.5rem auto;
   }
 
   .hive-content p {
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding-bottom: 1rem;
   }
 
@@ -843,6 +913,40 @@ header.sticky {
 
   .event-time h6 {
     font-size: 0.8rem;
+  }
+
+  .footer-img {
+    width: 15%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .footer-links li {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links li a {
+    margin: 1rem;
+  }
+
+  .events-mobi {
+    display: block;
+  }
+
+  .events-desktop {
+    display: none;
+  }
+
+  #events .events-content {
+    margin: 1rem;
+    padding: 1rem;
+    /* background-image: url(img/Our-utilities.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
 }
 
@@ -975,6 +1079,43 @@ header.sticky {
     line-height: 2.6rem;
   }
 
+  .hubs-content {
+    width: 100%;
+  }
+
+  .hubs-content h2 {
+    font-size: 6rem;
+    color: #fe9d01;
+  }
+
+  .hive-content h3 {
+    font-size: 2.8rem;
+    padding-bottom: 1rem;
+  }
+
+  .hive-content p {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .hive-cards {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hive-card {
+    width: 50%;
+    margin: 1rem;
+  }
+
+  .hive-img {
+    width: auto;
+  }
+
+  .x-op {
+    padding: 2rem;
+  }
+
   .modal-content {
     width: 65%;
     margin: 1.5rem 0;
@@ -995,4 +1136,41 @@ header.sticky {
   .event-time h6 {
     font-size: 1rem;
   }
+}
+
+.main-img {
+  opacity: 0;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 1s, 2s;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+button {
+  font-family: "Clash Display", sans-serif;
+}
+
+body {
+  background-color: black;
 }
