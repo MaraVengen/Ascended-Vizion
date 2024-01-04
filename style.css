@@ -590,6 +590,44 @@ footer {
   display: none;
 }
 
+#rent {
+  /* background: url(img/Hero-image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: transparent;
+}
+
+.rent-content {
+  padding: 1rem;
+  border: 1px solid #fe9d01;
+  border-radius: 18px;
+  margin: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rent p {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.rent-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.carddd {
+  padding: 1rem;
+  margin: 1rem;
+}
+
 /* footer styling ends */
 
 @font-face {
@@ -947,6 +985,21 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
+  }
+
+  .rent-content {
+    margin: 0 1rem;
+  }
+
+  .rent-cards {
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .carddd {
+    padding: 1rem;
+    margin: 1rem;
   }
 }
 

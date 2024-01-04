@@ -67,15 +67,15 @@ function swiperCard() {
 swiperCard();
 window.addEventListener("resize", swiperCard);
 
-document.getElementById("see-events").addEventListener("click", function () {
-  document.querySelector(".bg-modal").style.display = "flex";
-});
+// document.getElementById("see-events").addEventListener("click", function () {
+//   document.querySelector(".bg-modal").style.display = "flex";
+// });
 
-document
-  .querySelector(".modal-close-btn")
-  .addEventListener("click", function () {
-    document.querySelector("bg-modal").style.display = "none";
-  });
+// document
+//   .querySelector(".modal-close-btn")
+//   .addEventListener("click", function () {
+//     document.querySelector("bg-modal").style.display = "none";
+//   });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
